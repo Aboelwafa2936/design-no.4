@@ -1,0 +1,310 @@
+/* Global reset for default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Page container */
+.page {
+    background-image: url(eid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120vb;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: 
+        "logo logo logo navbar navbar navbar navbar navbar navbar navbar"
+        "body body body body body body body body body body"
+        "footer footer footer footer footer footer footer footer footer footer";
+}
+
+/* Logo styling */
+.logo {
+    grid-area: logo;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: 'Ephesis', cursive;
+    color: white;
+    text-shadow: rgb(208 19 19 / 85%) 6px 1px 4px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 40px 0 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    text-transform: capitalize;
+    transition-duration: 1s;
+}
+
+/* Navbar link hover effect */
+.navbar ul li a:hover {
+    color: rgba(22, 60, 103, 0.955);
+    border-bottom: 2px solid rgba(24, 26, 29, 0.955);
+    padding: 10px;
+}
+
+/* Body styling */
+.body {
+    grid-area: body;
+    background-color: white;
+    margin-top: 600px;
+}
+
+/* greeting message styling */
+.happy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-top: 100px;
+    color: white;
+    text-shadow: rgb(208 19 19 / 85%) 6px 1px 4px;
+    font-family: 'Ephesis', cursive;
+}
+
+.eid{
+    color: #ffc801;
+}
+
+/* Part1 styling */
+.part1 > h1 {
+    margin: 50px 0 30px;
+    color: #ffc801;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgb(0 0 0 / 70%);
+}
+
+.elfitr{
+    text-transform: none;
+}
+
+.part1 > p {
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+}
+
+/* Styling for containers one to four */
+.one, .two, .three, .four {
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+/* Styling for containers two and four */
+.two, .four {
+    background-color: #ffc801;
+    border: 1px solid #ffc801;
+    box-shadow: 6px 5px 8px 0px rgb(0 0 0 / 70%);
+    border-radius: 4px;
+}
+
+/* Styling for containers one and three */
+.one, .three {
+    background-color: gray;
+    border: 1px solid gray;
+    box-shadow: 6px 5px 8px 0px rgb(0 0 0 / 70%);
+    border-radius: 4px;
+}
+
+/* Styling for icons in containers */
+.one i, .two i, .three i, .four i {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Styling for container text */
+.container p {
+    color: white;
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.container .ipsum{
+    text-transform: none;
+}
+
+/* Part2 styling */
+.part2 > h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #ffc801;
+    margin: 60px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Image grid styling */
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ffc801;
+    gap: 2px;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.imgs img {
+    width: 380px;
+    height: 200px;
+}
+
+/* Part3 styling */
+.part3 {
+    background-image: url(8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* Form styling */
+.form {
+    display: block;
+    border: 2px solid #ffc801;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(10 53 67 / 62%);
+}
+
+.form h1 {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.form :nth-child(2) {
+    color: white;
+}
+
+.form input,
+.form textarea {
+    display: block;
+    margin: 20px 50px;
+    background-color: rgb(13 71 75 / 31%);
+}
+
+/* Form input and textarea styling */
+input[type=submit], 
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+    padding: 20px;
+    color: #ffc801;
+    border-radius: 6px;
+}
+
+#name, #email, #text-area {
+    width: 80%;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 50px;
+    border-bottom: 2px solid #ffc801;
+}
+
+#submit {
+    width: 100px;
+    margin: auto;
+    background-color: rgb(13 71 75 / 31%);
+    border-radius: 50px;
+    transition-duration: 1s;
+}
+
+/* Submit button hover effect */
+#submit:hover {
+    color: rgba(31, 189, 200, 0.603);
+    width: 120px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+/* Footer styling */
+.footer {
+    grid-area: footer;
+    background-color: #ffc801;
+    padding: 40px; 
+}
+
+/* Container2 styling */
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for lorem, links, and address sections */
+.lorem, .links, .address {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 60px;
+}
+
+/* Styling for links in the footer */
+.links a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 1s;
+}
+
+/* Footer link hover effect */
+.links a:hover {
+    color: white;
+    background-color: brown;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Styling for footer icons */
+.icons {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    gap: 30px;
+    font-size: 35px;
+}
