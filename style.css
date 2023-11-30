@@ -257,7 +257,8 @@ textarea::placeholder {
 /* Submit button hover effect */
 #submit:hover {
     color: rgba(31, 189, 200, 0.603);
-    width: 100px;
+    width: 120px;
+    padding: 5px;
     font-size: 25px;
     border-radius: 20px;
 }
